@@ -31,6 +31,7 @@ Currently we have decided to abandon lots of features due to the time and resour
 -   Platform/Platform locks
 -   Specialist character
 -   Notification messages
+-   Stamina system and other systems
 -   Dancing character and other customized actions
 -   Real animations
 -   Rendered in true 3d
@@ -69,7 +70,7 @@ We have also explored some possibilities in the [wiki of simulatte](https://gith
 
 ## Getting Started
 
-See `DEPOLY.md` for instructions for building the projects and running the game.
+See `DEPLOY.md` for instructions for building the projects and running the game.
 
 ## Language reference
 
