@@ -1,39 +1,97 @@
-# Design of Project ironica
+### Synopsis
 
-### Overview Architecture
+The game is based on a grid (tilemap). There will be one or more characters on the grid, and other items (gems/switches/monsters/locks, etc). Player should write codes (in Kotlin DSL) to control these characters to move within the grid and interact with items on the grid.
 
-The project is decoupled with a C/S structure. This structure allow us to decouple the project into two (or eventually more) parts that are independent to each other. Each part is concentrated by its own issues and do not influence others.
+There are several conditions when they hold the player might win or lose a game. At the end of game the player gains gem that he/she could spend in the store for different features.
 
-Even in the future if we will carry on the project into a standalone application, it's still preferable to implement with an embedded C/S structure rather than a monolithic application.
+The game should be fun while still providing an opening introduction to programming for novices in PL.
 
-The communication between client and server is HTTP request with data structures in json format.
+### Characteristics
 
-For the back-end (server) we have chosen to use Kotlin as the main language, mainly because of its strong expressiveness and flexibility of Kotlin DSL. Other libraries such as Ktor, Kotlin-serialization, KI-Shell and KotlinPoet have been used. See [the repo of Simulatte](https://github.com/Ironica/simulatte) for more information.
+-   Genre: 2.5D isometric tilemap
+-   Single Player
+-   Language: Kotlin DSL
+-   Game Engine: Unity 3D
+-   Target: Cross-Platform (currently Windows & Mac)
 
-As for the front-end (client), we have chosen Unity3D and therefore C# as the main language. Several libraries have been used.
+### Tech stack
 
-### Back-end
+-   Front-end
+    -   Unity 2020.3.7f1
+        -   C#7, .Net 4.7.1 (Mono), Nuget, ...
+-   Back-end
+    -   IntelliJ IDEA 2021
+        -   Java 11, Kotlin 1.5, Gradle, ...
+-   Graphics
+    -   Blender
+    -   Adobe Illustrator
+-   Sounds / Musics
+    -   N/A
+-   Misc
+    -   The Postman - for http request test
 
-Here's a simplified class/module diagram of implementation of back-end (without the ktor module). The overall UML will be too complicated to be shown here therefore I will move it to appendix.
+### Gameplay
 
-![](./img/back-end-archi.png)
+-   Types of characters
 
-Each module are loosely coupled therefore you can easily replace an implementation of one part by another implementation but the project will still work.
+    -   Player: common character, has every possibilities to interact in a plains terrain
 
-\<TODO\>
+        *naming system*: if user attributes the corresponding name to a player, then the player will have its special skin and could have some more actions.
 
-Other informations:
+    -   ~~Specialist: a special kind of character that have some more abilities regarding modifying the terrain (level up or down of platforms)~~ (IMPLEMENTED AT BACKEND BUT CURRENTLY UNAVAILABLE)
 
--   `gradle` for project & package managements
--   `Space / GitHub` for checklist / TODO / project management
--   `Space` for CI/CD deployment
+-   Types of items
 
-### Front-end
+    -   Gem: to be collected by user to achieve the goal
+    -   Switch: to be toggled by user to achieve the goal
+    -   ~~Beeper: could be collected or dropped on a tile~~ (IMPLEMENTED AT BACKEND BUT CURRENTLY UNAVAILABLE)
+    -   Portal: could teleport a character to another tile
+    -   ~~Lock & Platforms: specialists can level-up and level-down platforms by toggling a lock~~ (IMPLEMENTED AT BACKEND BUT CURRENTLY UNAVAILABLE)
 
-\<TODO\>
+-   Enemy
 
-### Misc
+    At the stage the enemies are just a kind of monster that a character could attack. The monster dies instantly after the attack and character advance for a square.
 
-Here's a use-case of a server connected by two different clients, to illustrate the connections between front-end and server but also the possibility to manage multiple requests at same time.
+    More complex enemies could be developed in the future.
 
-![](./img/request-flow.png)
+-   Game Control
+
+    Write codes.
+
+-   Game system
+
+    In each level, user must write some codes to drive the characters to move, to collect gems and to interact with other objects on the playground.
+
+    In the future, it would be possible for players to write codes to change the terrains.
+
+    Additional systems contains the change of character, the store, etc. 
+
+-   UI
+
+    The main UI is divided into two parts, a text area for entering codes with some more buttons, and a playground where the game animation is rendered.
+
+    Player could choose to `START` or `RESET` the text area *and also* the game playground.
+
+-   Additional features
+
+    -   [x] Win/Lost/Pending status
+    -   [x] Progress bar
+    -   [x] Stats of the current game e.g. collected gems
+    -   [x] Autosave: The codes of user are automatically saved when the user click on the `START` button
+    -   [x] Different game levels and a menu to choose a level to play
+    -   [x] Bundled levels, one must resolve enough levels in current stage to progress to the next stage
+    -   [x] A console for the purpose of debugging
+    -   [x] Messages or sound effects while special events is triggered
+
+---
+
+### Dev goal
+
+-   Back-end
+    -   A full featured server that could be build up to receive requests and make responses
+    -   More features of playground (e.g. terrain changes, creative gamemode, etc)
+-   Front-end
+    -   A minimum playable client that could communicate with server, allows user to write codes and decode response of the server to make correct interactions
+    -   A client with more additional features
+    -   Improved UI/UX design
+
