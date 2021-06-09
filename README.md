@@ -32,6 +32,7 @@ Currently we have decided to abandon lots of features due to the time and resour
 -   Specialist character
 -   Notification messages
 -   Stamina system and other systems
+-   Better error handling and error report system
 -   Dancing character and other customized actions
 -   Real animations
 -   Rendered in true 3d
@@ -53,7 +54,7 @@ See `ARCHITECTURE.md` and each repo for more informations.
 
 ## Where to go from here?
 
-In DESIGN.md we have discussed the advantage of our C/S architecture. However, a monolithic application could be also interesting, just in this scenario we need to change our server implementation to Java stack, such as LWJGL or libKTX, etc.
+In `ARCHITECTURE.md` we have discussed the advantage of our C/S architecture. However, a monolithic application could be also interesting, just in this scenario we need to change our server implementation to Java stack, such as LWJGL or libKTX, etc.
 
 If we stick on Unity stack, lots of improvements could be done in the future:
 
