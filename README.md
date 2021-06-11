@@ -36,6 +36,7 @@ Currently we have decided to abandon lots of features due to the time and resour
 -   Dancing character and other customized actions
 -   Real animations
 -   Rendered in true 3d
+-   i18n
 -   ...
 
 Besides, there are many possibilities for this project. See **Where to go from here**.
