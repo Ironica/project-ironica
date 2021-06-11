@@ -1,3 +1,5 @@
+![Logo](img/logo.png)
+
 # Project ironica
 
 ## Background
