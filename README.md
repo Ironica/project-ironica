@@ -16,12 +16,25 @@ The implementation takes full advantages of Kotlin DSL (such as extension method
 
 -   A playground server that receives requests from client, simulates a playground and resends responses back.
 
-    See the wiki of simulatte for more info.
+    -   Based on Kotlin DSL for language support and full power of Kotlin Language
+    -   Supports different type of items and characters in server side, but several are not implemented at the front-end
+    -   Implemented a simple console to print out messages
+    -   Supports different game mode and configurations
+    -   Supports multi requests at the same time
+
+    See the [wiki of simulatte](https://github.com/Ironica/simulatte/wiki/About) for more info.
 
 -   A client that sends requests to server and receives responses from server.
 
     -   The client decodes the response and render the tilemap
-    -   The server is embedded within the client and closed at the exit of client
+    -   The server is embedded within the client, launched at the start and closed at the exit of client
+    -   The playground was first implemented in isometry then in true 3d (models, lights, etc)
+    -   The playground's camera could be zoomed in/out/rotated/panned
+    -   Any error will be caught and displayed within the console
+    -   Some additional systems
+        -   Map switching system
+        -   Music system
+        -   Store system
 
 See `DESIGN.md` and documents of each repo for more info.
 
@@ -29,15 +42,12 @@ See `DESIGN.md` and documents of each repo for more info.
 
 Currently we have decided to abandon lots of features due to the time and resource limits.
 
--   Beepers
--   Platform/Platform locks
--   Specialist character
+-   Beepers/Platform/Platform locks/Specialist character at front-end
 -   Notification messages
--   Stamina system and other systems
--   Better error handling and error report system
+-   Stamina system and other systems for playground
+-   An elaborated error handling and report system
 -   Dancing character and other customized actions
 -   Real animations
--   Rendered in true 3d
 -   i18n
 -   ...
 

@@ -8,7 +8,7 @@ The game should be fun while still providing an opening introduction to programm
 
 ### Characteristics
 
--   Genre: 2.5D isometric tilemap
+-   Genre: ~~2.5D isometric~~ 3D tilemap
 -   Single Player
 -   Language: Kotlin DSL
 -   Game Engine: Unity 3D
@@ -23,12 +23,16 @@ The game should be fun while still providing an opening introduction to programm
     -   IntelliJ IDEA 2021
         -   Java 11, Kotlin 1.5, Gradle, ...
 -   Graphics
-    -   Blender
     -   Adobe Illustrator
+    -   Sketch
+-   Modeling
+    -   Blender
 -   Sounds / Musics
     -   N/A
 -   Misc
     -   The Postman - for http request test
+-   Video Capture and Editing
+    -   QuickTime
 
 ### Gameplay
 
@@ -36,7 +40,7 @@ The game should be fun while still providing an opening introduction to programm
 
     -   Player: common character, has every possibilities to interact in a plains terrain
 
-        *naming system*: if user attributes the corresponding name to a player, then the player will have its special skin and could have some more actions.
+        ~~*naming system*: if user attributes the corresponding name to a player, then the player will have its special skin and could have some more actions.~~ (UNIMPLEMENTED)
 
     -   ~~Specialist: a special kind of character that have some more abilities regarding modifying the terrain (level up or down of platforms)~~ (IMPLEMENTED AT BACKEND BUT CURRENTLY UNAVAILABLE)
 
@@ -93,5 +97,5 @@ The game should be fun while still providing an opening introduction to programm
 -   Front-end
     -   A minimum playable client that could communicate with server, allows user to write codes and decode response of the server to make correct interactions
     -   A client with more additional features
-    -   Improved UI/UX design
+    -   Improved UI/UX design with an adapted design language
 

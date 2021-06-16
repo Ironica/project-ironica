@@ -37,6 +37,7 @@ The front-end is implemented with Unity. It consists of several scenes:
 -   a gaming scene
 -   a scene for select the map to play
 -   a scene for the store
+-   scenes for settings, help, credits, etc..
 
 The core features stand inside the gaming scene, which is linked to the `DataLink` class. Gaming logics consist of reading user input, rendering the playground, processing the serialization/deserialization along with sending requests to server and receiving responses from server. See data flow diagram for more info.
 
