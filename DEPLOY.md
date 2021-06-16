@@ -4,6 +4,12 @@
 
 The project is build with Intellij IDEA 2021.1. You could either get newest release from [here](https://github.com/Ironica/simulatte/releases) or build the project manually.
 
+If you just want to launch the game, you don't need to deploy the server, please go directly to section **Client**.
+
+#### Prerequisite
+
+JDK version between 11 and 15 (inclusive) is required. Any other version (8 or 16) are not supported. According to your OS platform, you can use `choco`, `brew` or `apt-get` or other package manager to get the latest OpenJDK with `adoptopenjdk`.
+
 #### Clone the project
 
 Ensure that you have `git` installed.
@@ -41,7 +47,13 @@ The usage of `gradle build tool` is not tested but normally it should work with 
 
 You could download release from [here](https://github.com/Ironica/Unity-Front-End/releases). Each release contains a target for Windows and a target for macOS. M1 is not tested but the game might run.
 
-Just unarchive the archive and run the executable to launch the game.
+Just unarchive the archive and run the executable to launch the game. Do not modify the `Assets` folder.
+
+#### Runtime Prerequisite
+
+No .NET environment is required for launching the game.
+
+However, a Java JDK version of between 11 and 15 (inclusive) is required to make the embedded server run correctly. See section **Server > Prerequisite** for more info.
 
 #### Build Prerequisite
 
