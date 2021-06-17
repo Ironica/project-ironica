@@ -23,7 +23,6 @@ The game should be fun while still providing an opening introduction to programm
     -   IntelliJ IDEA 2021
         -   Java 11, Kotlin 1.5, Gradle, ...
 -   Graphics
-    -   Adobe Illustrator
     -   Sketch
 -   Modeling
     -   Blender
@@ -33,6 +32,7 @@ The game should be fun while still providing an opening introduction to programm
     -   The Postman - for http request test
 -   Video Capture and Editing
     -   QuickTime
+    -   iMovie
 
 ### Gameplay
 
