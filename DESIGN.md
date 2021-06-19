@@ -11,6 +11,7 @@ The game should be fun while still providing an opening introduction to programm
 -   Genre: ~~2.5D isometric~~ 3D tilemap
 -   Single Player
 -   Language: Kotlin DSL
+-   Language: EN, FR, ZH, JP
 -   Game Engine: Unity 3D
 -   Target: Cross-Platform (currently Windows & Mac)
 

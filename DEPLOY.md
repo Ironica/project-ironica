@@ -10,6 +10,10 @@ If you just want to launch the game, you don't need to deploy the server, please
 
 JDK version between 11 and 15 (inclusive) is required. Any other version (8 or 16) are not supported. According to your OS platform, you can use `choco`, `brew` or `apt-get` or other package manager to get the latest OpenJDK with `adoptopenjdk`.
 
+If you are on macOS and you have a copy of JDK 16, you might need to disable your `info.plist` in JDK 16 to enable your OS to detect an elder version of JDK.
+
+If you are on Windows, you might need to change your `path` in order to reflect correctly to a desired JDK version.
+
 #### Clone the project
 
 Ensure that you have `git` installed.
@@ -57,7 +61,7 @@ However, a Java JDK version of between 11 and 15 (inclusive) is required to make
 
 #### Build Prerequisite
 
-Unity 2020.3.7f1 is required to build the project.
+Unity 2020.3.7f1 is required to build the project. Do not use older or newer version.
 
 #### Build the project
 

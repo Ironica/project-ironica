@@ -41,6 +41,16 @@ The front-end is implemented with Unity. It consists of several scenes:
 
 The core features stand inside the gaming scene, which is linked to the `DataLink` class. Gaming logics consist of reading user input, rendering the playground, processing the serialization/deserialization along with sending requests to server and receiving responses from server. See data flow diagram for more info.
 
+Each scene is implemented with one or several scripts that are organized within module directories for each of them. These scripts are responsible to various tasks such as handling button behaviour, connect a component to a specific logic, etc.
+
+Besides, there are also modules that are not related to a scene but to a specific logic layer:
+
+-   serialization as we have mentionned
+-   autolayout system
+-   tab system
+-   localization (i18n)
+-   utility functions (extension functions)
+
 ### Misc
 
 Here's a use-case of a server connected by two different clients, to illustrate the connections between front-end and server but also the possibility to manage multiple requests at same time.

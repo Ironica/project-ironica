@@ -35,6 +35,7 @@ The implementation takes full advantages of Kotlin DSL (such as extension method
         -   Map switching system
         -   Music system
         -   Store system
+        -   i18n
 
 See `DESIGN.md` and documents of each repo for more info.
 
@@ -43,12 +44,11 @@ See `DESIGN.md` and documents of each repo for more info.
 Currently we have decided to abandon lots of features due to the time and resource limits.
 
 -   Beepers/Platform/Platform locks/Specialist character at front-end
--   Notification messages
+-   Notification messages and reminder at front-end
 -   Stamina system and other systems for playground
 -   An elaborated error handling and report system
 -   Dancing character and other customized actions
 -   Real animations
--   i18n
 -   ...
 
 Besides, there are many possibilities for this project. See **Where to go from here**.
@@ -71,7 +71,7 @@ In `ARCHITECTURE.md` we have discussed the advantage of our C/S architecture. Ho
 
 If we stick on Unity stack, lots of improvements could be done in the future:
 
--   Implement the playground in 3d
+-   Improve the 3d effects such as animation
 -   UI/UX improvements
 -   More complex configurations and game rules
 -   More game modes
