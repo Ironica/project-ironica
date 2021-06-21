@@ -29,6 +29,7 @@ The implementation takes full advantages of Kotlin DSL (such as extension method
     -   The client decodes the response and render the tilemap
     -   The server is embedded within the client, launched at the start and closed at the exit of client
     -   The playground was first implemented in isometry then in true 3d (models, lights, etc)
+        -   Implemented with camera system
     -   The playground's camera could be zoomed in/out/rotated/panned
     -   Any error will be caught and displayed within the console
     -   Some additional systems
@@ -49,6 +50,7 @@ Currently we have decided to abandon lots of features due to the time and resour
 -   An elaborated error handling and report system
 -   Dancing character and other customized actions
 -   Real animations
+-   L11n
 -   ...
 
 Besides, there are many possibilities for this project. See **Where to go from here**.
@@ -72,13 +74,19 @@ In `ARCHITECTURE.md` we have discussed the advantage of our C/S architecture. Ho
 If we stick on Unity stack, lots of improvements could be done in the future:
 
 -   Improve the 3d effects such as animation
--   UI/UX improvements
--   More complex configurations and game rules
--   More game modes
--   Improve extensibility
+-   UI/UX and modeling improvements
+-   More game modes, configurations and game rules
+-   Improve extensibility such as plugin system
 -   More helper features such as syntax highlighting, auto-completion, static analysis, etc...
 
+As for the server, several improvements could have been achieved:
+
+-   A better data structure and procedure pipeline, such as sending IR instructions instead of frames, that allows more extensibility and decoupling to the implementation
+-   Reimplement the language with a homemade IR & VM
+
 We have also explored some possibilities in the [wiki of simulatte](https://github.com/Ironica/simulatte/wiki/About).
+
+As for the game itself, a complete content (book) organized with different levels, sections and characters is necessary to make the game more appealing. Also, it would be interesting if at the end some chapters introduce some advanced programming ideas in Kotlin and JVM. But this requires that the overall architecture of the project is rewritten.
 
 ---
 
