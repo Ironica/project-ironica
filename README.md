@@ -83,6 +83,7 @@ As for the server, several improvements could have been achieved:
 
 -   A better data structure and procedure pipeline, such as sending IR instructions instead of frames, that allows more extensibility and decoupling to the implementation
 -   Reimplement the language with a homemade IR & VM
+-   Apply the microservice pattern with ktor to handle different services at the back-end (e.g. maps storage, game status, stores)
 
 We have also explored some possibilities in the [wiki of simulatte](https://github.com/Ironica/simulatte/wiki/About).
 
