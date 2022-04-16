@@ -2,13 +2,6 @@
 
 # Project ironica
 
-## Contributers
-
-[![Ammar Kazem](https://img.shields.io/badge/contributor-Ammar%20Kazem-green)](https://github.com/Ammar96399)
-[![Dylan Dupond](https://img.shields.io/badge/contributor-Dylan%20Dupond-blue)](https://github.com/DylanDupond)
-[![Emile Le Moigne](https://img.shields.io/badge/contributor-Emile%20Le%20Moigne-orange)](https://github.com/emile-le-moigne)
-[![kokoro-aya](https://img.shields.io/badge/contributor-kokoro--aya-66ccff)](https://github.com/kokoro-aya)
-
 ## Background
 
 The project was inspired by the famous *playgrounds* application of iOS/MacOS but also *Karel The Robot*. Both programs illustrate a simple teaching environment of imperative programming basics for beginners while the first also integrates a full language runtime (in Swift) into the environment.
